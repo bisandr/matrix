@@ -13,10 +13,8 @@ def enlarge_binary_matrix(binary_matrix, scale_factor):
 
     return enlarged_matrix
 
-# Example usage:
-original_matrix = np.array([[1, 0, 1],
-                            [0, 1, 0],
-                            [1, 0, 1]])
+# Generate a random binary matrix
+original_matrix = np.random.choice([0, 1], size=(5, 5), p=[0.5, 0.5])
 
 scale_factor = 2  # You can adjust this based on your requirements
 enlarged_matrix = enlarge_binary_matrix(original_matrix, scale_factor)
@@ -25,3 +23,4 @@ print("Original Matrix:")
 print(original_matrix)
 print("\nEnlarged Matrix:")
 print(enlarged_matrix)
+
